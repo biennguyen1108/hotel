@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log in and Registration</title>
+        <link rel="stylesheet" href="./login_registration.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    </head>
+
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log
+                        In</button>
+                    <button type="button" class="toggle-btn"
+                        onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook-square" style=" color: #3397b6;"></i></a>
+                    <a href=""><i class="fas fa-envelope" style=" color: #3397b6;"></i></a>
+       
+                </div>
+                <form id="login" action="" class="input-group">
+                    <input type="text" class="input-field" id="user"
+                        placeholder="User Id" required>
+                    <input type="password" name="password" class="input-field"
+                        id="password"
+                        placeholder="Enter Password" required>
+                    <span id="span"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qw_TMOwxDkO7-Qo0sXNjK3At__d7aN41oA&usqp=CAU"
+                            alt=""
+                            width="20px" onclick="showHidden()"></span>
+                    <input type="checkbox" class="check-box"><span>Remember
+                        Password</span>
+                    <button type="button" class="submit-btn"
+                        onclick="getInfo()"> Log In
+                       </button>
+
+                </form>
+                <form id="register" action="" class="input-group">
+                    <input type="text" class="input-field" id="userres"
+                        placeholder="User Id" required>
+                    <input type="email" class="input-field" id="email"
+                        placeholder="Email Id" required>
+
+                    <input type="password" class="input-field" id="passwordres"
+                        placeholder="Enter Password" required>
+                    <span id="span"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qw_TMOwxDkO7-Qo0sXNjK3At__d7aN41oA&usqp=CAU"
+                            alt=""
+                            width="20px" onclick="showHidden()"></span>
+                    <input type="checkbox" class="check-box"><span>I agree to
+                        the terms & conditions</span>
+                    <button type="button" class="submit-btn"
+                        onclick="regiter()">Register</button>
+                </form>
+
+            </div>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+        <script src="login.js">
+        
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!----======== CSS ======== -->
+     <link rel="stylesheet" href="room.css">
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <!----===== Iconscout CSS ===== -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+      <div class="logo-name">
+          <div class="logo-image">
+              <!--<img src="images/logo.png" alt="">-->
+          </div>
+
+          <span class="logo_name">ROYAL HOTEL</span>
+      </div>
+
+      <div class="menu-items">
+          <ul class="nav-links">
+              <li><a href="http://127.0.0.1:5500/admin.html">
+                  <i class="uil uil-estate"></i>
+                  <span class="link-name">Dahsboard</span>
+              </a></li>
+              <li><a href="http://127.0.0.1:5500/admin/user.html">
+                  <i class="uil uil-user"></i>
+                  <span class="link-name">User</span>
+              </a></li>
+              <li><a href="http://127.0.0.1:5500/admin/order.html">
+                  <i class="uil uil-shopping-cart-alt"></i>
+                  <span class="link-name">Order</span>
+              </a></li>
+              <li><a href="http://127.0.0.1:5500/admin/room.html"   >
+                  <i class="uil uil-bed-double"></i>
+                  <span class="link-name">Room</span>                 
+              </a></li>
+              <li><a href="#">
+                  <i class="uil uil-setting"></i>
+                  <span class="link-name">Setting</span>
+              </a></li>
+           </ul> 
+                    
+      </div>
+  </nav>
+   
+    <div id="divAddHotel" >						
+      <div class="row" style="padding-left: 270px">						
+              <div class="col">		
+              <div class="input-group-prepend">		
+                <span class="input-group-text" id="basic-addon3">Name:</span>	
+              </div>		
+              <input type="text" class="form-control" id="nameproduct" />		
+              <div class="input-group-prepend">		
+                <span class="input-group-text" id="basic-addon3">Price:</span>	
+              </div>		
+              <input type="text" class="form-control" id="priceproduct" />		
+              </div>		
+              <div class="col">		
+              <div class="input-group-prepend">		
+                <span class="input-group-text" id="basic-addon3">type:</span>	
+              </div>		
+              <input type="text" class="form-control" id="noteproduct" />		
+              <div class="input-group-prepend">		
+                <span class="input-group-text" id="basic-addon3"	
+                >Detail:</span	
+                >	
+              </div>		
+              <input type="text" class="form-control" id="detailproduct" />		
+              <div class="input-group-prepend">		
+                <span class="input-group-text" id="basic-addon3">Image</span>	
+              </div>		
+              <div>		
+                <input type="file" name="img" id="imgproduct"  />	
+              </div>		
+              </div>		
+      </div>						
+      <div id="ok" style=" margin-left: 270px;">						
+      <button type="submit" onclick="save()" class="btn btn-primary">						
+      Save						
+      </button>						
+      <button type="button" onclick="reset()" class="btn btn-warning">						
+      reset						
+      </button>						
+      </div>						
+      <div id="edit"></div>						
+      </div>						
+      <div class="card shadow mb-4" style=" margin-left:270px" >						
+              <div class="card-header py-3">		
+                <button id="themmoi" onclick="addHotel()" class="btn btn-primary"><i class="fas fa-plus"></i>Thêm mới</button>	
+                <button id="huy" onclick="removeHotel()" class="btn btn-danger"><i class="fas fa-times"></i>Huỷ</button>	
+              </div>		
+              <div class="card-body" >		
+                <div class="table-responsive">	
+                <table class="table table-bordered" id="dataTable" width="1500px" cellspacing="0" >	
+                  <thead>
+                  <tr>                 
+                    <th>ID</th>
+                    <th>Room</th>
+                    <th>IMG</th>
+                    <th>Price</th>
+                    <th>Type</th>
+                    <th>Edit</th>
+                    <th>Delete</th>          
+                  </tr>
+                  </thead>
+                  <tbody id="tab">
+                  
+                  </tbody>
+                </table>	
+                </div>	
+              </div>		
+      </div>						
+      </div>						
+      </div>						
+      </div>						
+
+<body>
+  <script src="room.js"></script>
+</head>

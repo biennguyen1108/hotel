@@ -1,0 +1,262 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+}
+.container{
+
+  width: 100%;
+  
+}
+.header{
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns:10% 70% 20% ;
+  height:164px;
+  width: 100%;
+}
+.menu{
+  width: 100%;
+  height: 41px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: #fff;
+    gap:50px;
+    color: #FF9900;
+    margin-top: 59px;
+    margin-left: 120px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    width: 90%;
+}
+.menu ul :hover{
+  border:1px solid white;
+  color: #3F7BFE;
+  border-radius: 10px;
+  height: 50px;
+  text-align: center ;
+}
+.button {
+  background-color: #fff;
+  width: 100%;
+  margin-left: -100px;
+}
+.bt1 a{
+  color: white;
+  text-decoration: none;
+}
+.bt1{
+ 
+  width: 40%;
+  height: 40px;
+  border:1px solid #f3dddd;
+  border-radius: 10px;
+  background: linear-gradient(to right,  #28dedb, #3397b6);
+  margin-top: 55px;
+  margin-left: 100px;
+  color:#000000;
+  
+  
+}
+.button button:hover{
+  background-color: #fff;
+  color:#FF9900;
+  border: 1px solid #fff ;
+
+}
+.bt2{
+  width: 40%;
+  height: 40px;
+  border:1px solid #08C2EB;
+  border-radius: 10px;
+  background-color: #08C2EB;
+  margin-top: 55px;
+  color:#000000;
+}
+.content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: #e9ecef;
+}
+.check-box{
+  border-left: none;
+  margin-top: 30px;
+  width: 300px;
+  height: 400px;
+}
+.leftcheck-box{
+    color:#3F7BFE;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.leftcheckbox{
+  margin-top: 30px;
+     margin-left: 40px;
+}
+.checkboxlabel{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.submit1{
+    border-radius: 15px;
+    background: #3F7BFE;
+    border:1px solid #3F7BFE ;
+    height: 40px;
+    width: 60%;
+    margin-left: 30px;
+}
+.check-box .submit1:hover{
+    background: #344583;
+    color:#fff;
+}
+.right{
+  margin-right: 50px; 
+    border: 1px solid ;
+    border-top: none;
+    border-bottom: none;
+    border-right:  none;
+}
+#men{
+    row-gap: 30px;
+}
+#woment{
+    row-gap: 30px;
+}
+#mmmm{
+    row-gap: 30px;
+}
+.footer{
+  background-color: #FFFFFF;
+  padding-top: 50px;
+  width: 100%;
+  height: 400px;
+}
+.listfooter{
+  display: grid;
+  grid-template-columns: 30% 20% 30% 20%;
+  gap: 10px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.listfooter1h4{
+  color:#344583;
+}
+.listfooter1 .listfooter1h4:hover{
+  color:#3A6EF6;
+}
+.listfooter1p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: #221F1F;
+}
+.listfooter1 .listfooter1p:hover{
+  color:#344583 ;
+}
+
+.listfooter1button{
+  width:191px;
+  height:56px;
+  background: #3F7BFE;
+  border-radius: 50px;
+  border: 1px solid #3F7BFE;
+}
+.listfooter1 .listfooter1button:hover{
+  color:#FFFFFF;
+  background-color: #344583 ;
+  border: 1px solid #344583 ;
+}
+.listfooter2h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #344583;
+
+}
+.listfooter2 .listfooter2h4:hover{
+  color:#3F7BFE ;
+}
+.listfooter2p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #3F7BFE;
+}
+.listfooter2 .listfooter2p:hover{
+  color:#344583 ;
+}
+.listfooter3h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #344583;
+}
+.listfooter3 .listfooter3h4:hover{
+  color:#3F7BFE ;
+}
+.listfooter3p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #3F7BFE;
+}
+.listfooter3 .listfooter3p:hover{
+  color: #344583;
+}
+.listfooter4h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #344583;
+}
+.listfooter4 .listfooter4h4:hover{
+  color: #3F7BFE;
+}
+
+.listfooter4p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #221F1F;
+}
+.listfooter4 .listfooter4p:hover{
+  color: #344583;
+}
+/*Reponsive*/
